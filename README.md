@@ -69,7 +69,9 @@ Edit the .env file to include you PINECONE_API_KEY
     PINECONE_API_KEY=<<your-api_key>>
 
 ### 4. Set up you Virtual Environment and Packages
+Follow the instructions using `venv` or `conda` to set up the Virtual Environment or do it the way you would normally.
 
+#### 4.1 Using venv
 Within the root directory, set up a Python Venv, you will need Python 3.8 or greater. 
 If you are on a lower python version you will need to upgrade.
 Follow these instructions to set up the Virtual Environment  or do it the way you would normally.
@@ -90,6 +92,15 @@ Again, from the terminal, install the packages:
 
     pip install pinecone-client openai python-dotenv
 
+#### 4.2 Using conda
+From within the project folder create a new `conda` environment using the provided `environment.yaml` file. On the terminal:
+
+    conda env create -f environment.yaml
+
+then activate the environment using the command
+
+    conda activate rag-workshop   
+    
 ### 5. Check it all works
 
 Go and run the code **verify_setup.py** located in this (the root) directory.
